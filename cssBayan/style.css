@@ -73,6 +73,10 @@ body {
     padding: 1rem;
   }
 
+  .accordion-input:active ~ .accordion-label {
+    opacity: .4;
+  }
+
 .accordion-input:checked ~ .accordion-label{
     max-height: 33rem;
     animation: checked ease-in 1s;
@@ -82,7 +86,7 @@ body {
 
   @keyframes checked {
     0% {
-      opacity: .2;
+      opacity: .4;
       color: #ff0000;
     }
     100% {
