@@ -72,6 +72,29 @@ body {
     padding: 1rem;
   }
 
+  .icon-svg path{
+    fill: #042700;
+  }
+
+  .accordion-input:checked ~ .accordion-label .icon-svg path {
+    animation: active-svg ease-in 1s;
+  }
+
+  @keyframes active-svg {
+    0% {
+      opacity: .4;
+      fill: #ff0000;
+    }
+    100% {
+      opacity: 1;
+      fill: #042700;
+    }
+  }
+
+  .accordion-input:active ~ .accordion-label .icon-svg path {
+    fill: #ff0000 !important;
+  }
+
   .accordion-input:active ~ .accordion-label {
     opacity: .4;
     color: #ff0000 !important;
