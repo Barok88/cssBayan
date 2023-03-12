@@ -36,7 +36,6 @@ body {
     margin: 0 2rem;
   }
 
-
   .label-button {
     width: 2rem;
     height: 2rem;
@@ -75,7 +74,7 @@ body {
 
   .accordion-input:active ~ .accordion-label {
     opacity: .4;
-    color: #ff0000;
+    color: #ff0000 !important;
   }
 
 .accordion-input:checked ~ .accordion-label{
